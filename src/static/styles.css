@@ -612,6 +612,27 @@ footer {
   }
 }
 
+/* Site navigation in header */
+#site-nav {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+#site-nav a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.85rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 4px 12px;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+#site-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
 /* User controls in header */
 #user-controls {
   position: absolute;

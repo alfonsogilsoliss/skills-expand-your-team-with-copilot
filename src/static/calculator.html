@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator - Mergington High School</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mergington High School</h1>
+      <h2>Standard Calculator</h2>
+      <nav id="site-nav">
+        <a href="/static/index.html">← Back to Activities</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="calculator-section">
+        <div class="calculator">
+          <div class="calc-display">
+            <div id="calc-expression" class="calc-expression"></div>
+            <div id="calc-result" class="calc-result">0</div>
+          </div>
+          <div class="calc-buttons">
+            <!-- Row 1 -->
+            <button class="calc-btn btn-clear" id="btn-clear">AC</button>
+            <button class="calc-btn btn-sign" id="btn-sign">+/-</button>
+            <button class="calc-btn btn-percent" id="btn-percent">%</button>
+            <button class="calc-btn btn-operator" data-op="/">÷</button>
+            <!-- Row 2 -->
+            <button class="calc-btn btn-number" data-num="7">7</button>
+            <button class="calc-btn btn-number" data-num="8">8</button>
+            <button class="calc-btn btn-number" data-num="9">9</button>
+            <button class="calc-btn btn-operator" data-op="*">×</button>
+            <!-- Row 3 -->
+            <button class="calc-btn btn-number" data-num="4">4</button>
+            <button class="calc-btn btn-number" data-num="5">5</button>
+            <button class="calc-btn btn-number" data-num="6">6</button>
+            <button class="calc-btn btn-operator" data-op="-">−</button>
+            <!-- Row 4 -->
+            <button class="calc-btn btn-number" data-num="1">1</button>
+            <button class="calc-btn btn-number" data-num="2">2</button>
+            <button class="calc-btn btn-number" data-num="3">3</button>
+            <button class="calc-btn btn-operator" data-op="+">+</button>
+            <!-- Row 5 -->
+            <button class="calc-btn btn-number btn-zero" data-num="0">0</button>
+            <button class="calc-btn btn-number" id="btn-decimal">.</button>
+            <button class="calc-btn btn-equals" id="btn-equals">=</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Mergington High School</p>
+    </footer>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
