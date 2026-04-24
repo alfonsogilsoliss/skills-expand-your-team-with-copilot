@@ -1,0 +1,135 @@
+/* Calculator layout */
+#calculator-section {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.calculator {
+  background-color: #1c1c1e;
+  border-radius: 16px;
+  padding: 20px;
+  width: 320px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Display */
+.calc-display {
+  background-color: #1c1c1e;
+  border-radius: 8px;
+  padding: 10px 8px 14px;
+  text-align: right;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.calc-expression {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  min-height: 1.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 4px;
+}
+
+.calc-result {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+/* Button grid */
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.calc-btn {
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: filter 0.1s ease, transform 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #ffffff;
+}
+
+.calc-btn:active {
+  filter: brightness(1.4);
+  transform: scale(0.95);
+}
+
+/* Number buttons */
+.btn-number {
+  background-color: #3a3a3c;
+}
+
+.btn-number:hover {
+  background-color: #4a4a4e;
+}
+
+/* Zero button spans two columns */
+.btn-zero {
+  grid-column: span 2;
+  border-radius: 32px;
+  justify-content: flex-start;
+  padding-left: 24px;
+}
+
+/* Function buttons (AC, +/-, %) */
+.btn-clear,
+.btn-sign,
+.btn-percent {
+  background-color: #636366;
+  color: #ffffff;
+}
+
+.btn-clear:hover,
+.btn-sign:hover,
+.btn-percent:hover {
+  background-color: #7a7a7e;
+}
+
+/* Operator buttons */
+.btn-operator {
+  background-color: var(--secondary);
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.btn-operator:hover {
+  background-color: var(--secondary-light);
+}
+
+.btn-operator.active {
+  background-color: #ffffff;
+  color: var(--secondary);
+}
+
+/* Equals button */
+.btn-equals {
+  background-color: var(--secondary);
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.btn-equals:hover {
+  background-color: var(--secondary-light);
+}
+
